@@ -12,4 +12,10 @@ class EventIndex extends Component
         $events = Event::latest()->paginate(5);
         return view('livewire.event-index', ['events' => $events]);
     }
+
+    public function destroy($id)
+    {
+        Event::findOrFail($id)->delete();
+        flash()->addInfo('Event deleted successfully.');
+    }
 }
