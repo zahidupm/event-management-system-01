@@ -10,4 +10,4 @@
     </div>
 </div>
 
-<button wire:loading.delay.long.remove type="submit" class="tracker-btn">Submit</button>
+<button wire:loading.delay.long.remove type="submit" class="event-btn">Submit</button>
