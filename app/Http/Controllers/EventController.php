@@ -36,7 +36,7 @@ class EventController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('event.show', ['event_id' => $id]);
     }
 
     /**
